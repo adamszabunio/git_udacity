@@ -7,15 +7,26 @@ What value do you think it offers?
 
 How can you use the staging area to make sure you have one commit per logical
 change?
--
+-by using git status to see how many changes are waiting to be committed.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+-you may want to test out some new revisions (developmental or experimental
+branches), while keeping the original (master) as it is.
 
 How do the diagrams help you visualize the branch structure?
+-to see how the 'flow' of parenthood and how the branches are related. Also,
+this can show us whether or not a commit is reachable.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+-All of the commits were combined into a single branch (master). After merging
+the branches, the non-master branches are deleted. However, all of the commits
+will remain in the order (timestamp) that they were created. The diagram
+represents the branches as being separate because of the flow (parenthood).
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+-The auto merge saves time and quickly points out differences between the two
+commits. This allows the person merging the two files a chance to investigate
+the conflicts and choose which versions to keep.  
